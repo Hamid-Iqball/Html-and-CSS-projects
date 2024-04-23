@@ -21,15 +21,15 @@ body {
 }
 .container {
   /* position: relative; */
-  width: 700px;
+  width: 1200px;
   /* margin-left: auto;
   margin-right: auto; */
   margin: 0 auto;
 }
 .main_header {
   background-color: #f7f7f7;
-  padding: 20px 40px;
-  margin: 60px;
+  padding: 0 40px;
+  margin: 0 10px 20px;
   height: 80px;
 }
 nav {
@@ -45,8 +45,8 @@ nav a:link {
   /* Inline-Block level */
   display: inline-block;
   background-color: azure;
-  margin-left: 20px;
-  margin-top: 20px;
+  /* margin-left: 20px;
+  margin-top: 20px; */
 }
 nav a:link:last-child {
   margin-right: 0;
@@ -128,7 +128,6 @@ header p {
   font-size: 18px;
   font-weight: bold;
 }
-
 .related-posts {
   list-style: none;
 }
@@ -207,4 +206,59 @@ h2::after {
   margin-top: 10px;
   float: left;
   margin-left: 10px;
+}
+
+/*  FlexBox */
+.main_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.author-box {
+  display: flex;
+}
+.related {
+  list-style-type: none;
+}
+.related-post {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+.related-link:link {
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+  display: block;
+  margin-bottom: 5px;
+}
+.related-author {
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.row {
+  position: relative;
+  display: flex;
+  margin-top: 30px;
+  align-items: start;
+  gap: 75px;
+  margin-bottom: 60px;
+  border-bottom: 10px solid #1098ad;
+}
+.like {
+  position: absolute;
+  bottom: 5 px;
+  right: 5 px;
+}
+.article {
+  flex: 0 0 825px;
+  margin-bottom: 0;
+}
+aside {
+  /* flex-basis: 3000px; */
+  flex: 0 0 300px;
 }
