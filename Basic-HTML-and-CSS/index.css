@@ -240,6 +240,7 @@ h2::after {
   font-style: italic;
 }
 
+/*
 .row {
   position: relative;
   display: flex;
@@ -259,6 +260,26 @@ h2::after {
   margin-bottom: 0;
 }
 aside {
-  /* flex-basis: 3000px; */
+ 
   flex: 0 0 300px;
+  align-items: center;
+  justify-items: center;
+}
+*/
+.container {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  column-gap: 75px;
+  row-gap: 60px;
+  align-items: start;
+}
+.main_header {
+  grid-column: 1 / span 2;
+}
+article {
+}
+aside {
+}
+footer {
+  grid-column: 1/-1;
 }
